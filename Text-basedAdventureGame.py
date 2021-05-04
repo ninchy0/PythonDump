@@ -6,7 +6,7 @@ import time
 
 def ques_ans():
 
-    global choice, correct
+    global correct
     true = ['yes', 'y', 'Y', 'YES']
     false = ['no', 'n', 'N', 'NO']
     correct = 0  # Storing the correct answers
