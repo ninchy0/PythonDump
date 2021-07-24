@@ -1,7 +1,6 @@
 # SimplePythonProjects
 
-These are all the simple fun python projects 
-that i did to increase my python skill in spare time.
+These are all the dumb python code
+that i wrote hoping that it will increase my python skill. LMAO...
 
-#Regards,
-ninchy0.
+# Repo Created By ninchy0 (A noob Programmer/Pentester)
