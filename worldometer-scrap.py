@@ -1,8 +1,18 @@
+'''
+Packages you might need to install via pip:
+1. pandas
+2. requests
+3. bs4
+4. csv
+5. io
+6. lxml
+'''
+
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 import csv
-import io  # so that, there'll be no encoding error.
+import io
 
 url = 'https://www.worldometers.info/coronavirus/'
 html_content = requests.get(url).text
