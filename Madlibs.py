@@ -1,8 +1,27 @@
 from tkinter import *
 
 root = Tk()
-root.geometry('300x300')
+
+window_width = 300
+window_height = 300
+
+# Get current display width and height
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+# print(f'Display width x height: {screen_width} x {screen_height}')
+
+# find the center point
+center_x = int(screen_width/2 - window_width / 2)
+center_y = int(screen_height/2 - window_height / 2)
+
+# assigning the geometry
+window_position = f'{window_width}x{window_height}+{center_x}+{center_y}'
+
+root.geometry(window_position)
+
 root.title('DataFlair-Mad Libs Generator')
+root.resizable(False, False)
+
 Label(root, text='Mad Libs Generator \n Have Fun!', font='arial 20 bold').pack()
 Label(root, text='Click Any One :', font='arial 15 bold').place(x=40, y=80)
 
@@ -56,7 +75,7 @@ def madlib3():
 
 Button(root, text='The Photographer', font='arial 15',
        command=madlib1, bg='ghost white').place(x=60, y=120)
-Button(root, text='apple and apple', font='arial 15',
+Button(root, text='Apple and apple', font='arial 15',
        command=madlib3, bg='ghost white').place(x=70, y=180)
 Button(root, text='The Butterfly', font='arial 15',
        command=madlib2, bg='ghost white').place(x=80, y=240)
