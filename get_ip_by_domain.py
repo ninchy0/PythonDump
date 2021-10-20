@@ -14,11 +14,19 @@ def get_ip(url):
 
 
 def main():
-    if sys.argv[1] == '-h':
-        usage()
 
-    if sys.argv[1] == '-d':
-        get_ip(str(sys.argv[2]))
+    try:
+        if sys.argv[1] == '-h':
+            usage()
+
+        elif sys.argv[1] == '-d':
+            get_ip(str(sys.argv[2]))
+
+        else:
+            usage()
+
+    except IndexError:
+        usage()
 
 
 if __name__ == '__main__':
